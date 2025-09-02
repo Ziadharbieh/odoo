@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <menuitem id="menu_ziad_root"
+                name="Ziad"
+                sequence="10"/>
+
+
+
+        <record id="action_my_model_list" model="ir.actions.act_window">
+            <field name="name">TESTING MENU</field>
+            <field name="res_model">model.a</field>
+            <field name="view_mode">kanban,form</field>
+        </record>
+
+
+        <menuitem id="menu_ziad_submenu"
+                name="My Records"
+                parent="menu_ziad_root"
+                action="action_my_model_list"/>
+    </data>
+</odoo>
